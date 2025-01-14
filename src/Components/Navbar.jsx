@@ -38,7 +38,7 @@ function Navbar({ themeHandel }) {
               </g>
             </svg>
             <span className="ml-3 text-xl text-gray-800">
-              Wallpaper hub<span className="text-pink-500">.</span>
+              Wld hub<span className="text-pink-500">.</span>
             </span>
           </a>
           <nav
