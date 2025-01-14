@@ -9,7 +9,7 @@ function Login() {
     <>
       <div className="flex min-h-full relative flex-col justify-center px-6 py-12 lg:px-8">
         <div className="w-[100%] flex flex-col items-center">
-          <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+          <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight">
             Login to your account
           </h2>
         </div>
