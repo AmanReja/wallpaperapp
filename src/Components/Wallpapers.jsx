@@ -10,12 +10,12 @@ import "./Wallpapers.css";
 
 function Wallpapers() {
   const cards = [
-    { name: "Spiderman", img: vd2, price: 10 },
-    { name: "nfs", img: vd3, price: 20 },
-    { name: "luffy", img: vd4, price: 15 },
-    { name: "God of War", img: vd5, price: 8 },
-    { name: "Inosuker", img: vd6, price: 9 },
-    { name: "Muichiro", img: vd7, price: 11 }
+    { name: "Spiderman", img: vd2, price: 10, rat: 3 },
+    { name: "nfs", img: vd3, price: 20, rat: 4 },
+    { name: "luffy", img: vd4, price: 15, rat: 5 },
+    { name: "God of War", img: vd5, price: 20, rat: 4.5 },
+    { name: "Inosuker", img: vd6, price: 9, rat: 3.2 },
+    { name: "Muichiro", img: vd7, price: 11, rat: 2.8 }
   ];
 
   const handleDownloadReceipt = (item) => {
@@ -90,13 +90,11 @@ function Wallpapers() {
                 {/* Repeat above for more stars */}
               </div>
               <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">
-                5.0
+                {item.rat}
               </span>
             </div>
             <div className="flex items-center gap-4 justify-between">
-              <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                ${item.price}
-              </span>
+              <span className="text-3xl font-bold">${item.price}</span>
               <a
                 onClick={() => handleDownloadReceipt(item)}
                 className="text-white cursor-pointer bg-sky-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
