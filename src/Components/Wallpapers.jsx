@@ -56,7 +56,7 @@ function Wallpapers() {
       {cards.map((item) => (
         <div
           key={item.name}
-          className="blackf w-full bg-lime-400 max-w-sm border border-gray-200 rounded-lg shadow"
+          className="blackf w-full max-w-sm border border-gray-200 rounded-lg shadow"
         >
           <a href="#">
             <video
@@ -71,7 +71,7 @@ function Wallpapers() {
           </a>
           <div className="px-5 pb-5">
             <a href="#">
-              <h5 className="text-xl uppercase font-semibold tracking-tight text-white">
+              <h5 className="text-xl uppercase font-semibold tracking-tight">
                 {item.name}
               </h5>
             </a>
