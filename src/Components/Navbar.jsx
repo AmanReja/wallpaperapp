@@ -37,7 +37,7 @@ function Navbar({ themeHandel }) {
                 <path d="M87 68.732l9.926 17.143 29.893-51.59L174.15 116H194L126.817 0z" />
               </g>
             </svg>
-            <span className="ml-3 text-xl text-gray-800">
+            <span className="ml-3 text-xl">
               Wld hub<span className="text-pink-500">.</span>
             </span>
           </a>
