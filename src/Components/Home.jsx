@@ -173,7 +173,7 @@ function Home() {
               </svg>
             </div>
             <div className="relative z-50 flex flex-col items-end justify-center w-full h-full lg:w-1/2 ms:pl-10">
-              <div className="container relative left-0 w-[100px] max-w-4xl lg:absolute xl:max-w-6xl lg:w-screen">
+              <div className="container relative left-0 w-[300px] max-w-4xl lg:absolute xl:max-w-6xl lg:w-screen">
                 <video
                   autoPlay
                   loop
