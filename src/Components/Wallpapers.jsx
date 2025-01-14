@@ -96,10 +96,12 @@ function Wallpapers() {
             <div className="flex items-center gap-4 justify-between">
               <span className="text-3xl font-bold">${item.price}</span>
               <a
+                href={item.img}
+                download={item.img}
                 onClick={() => handleDownloadReceipt(item)}
                 className="text-white cursor-pointer bg-sky-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               >
-                Download Receipt
+                Download image
               </a>
             </div>
           </div>
