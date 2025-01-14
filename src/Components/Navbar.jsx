@@ -1,9 +1,10 @@
-import { React, useState } from "react";
+import { React, useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import Themecontext from "./Context/Themecontext";
 
 function Navbar({ themeHandel }) {
+  const val = useContext(Themecontext);
   const [navopen, setNavopen] = useState(false);
-  const [theme, setTheme] = useState(false);
 
   const handelnavopen = () => {
     setNavopen((prev) => !prev);
@@ -23,10 +24,7 @@ function Navbar({ themeHandel }) {
             />
             <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600" />
           </label>
-          <a
-            href="/"
-            className="relative flex items-center  h-full font-black leading-none"
-          >
+          <a className="relative flex items-center  h-full font-black leading-none">
             <svg
               className="w-auto h-6 text-indigo-600 fill-current"
               viewBox="0 0 194 116"
@@ -37,7 +35,7 @@ function Navbar({ themeHandel }) {
                 <path d="M87 68.732l9.926 17.143 29.893-51.59L174.15 116H194L126.817 0z" />
               </g>
             </svg>
-            <span className="ml-3 text-xl">
+            <span className={`ml-3 text-xl`}>
               Wld hub<span className="text-pink-500">.</span>
             </span>
           </a>
