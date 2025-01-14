@@ -45,7 +45,7 @@ function Navbar({ themeHandel }) {
               !navopen
                 ? "hidden duration-300"
                 : "flex-col h-[38vh] gap-2 absolute top-[-20px] duration-300 transition-all"
-            } w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white  md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative`}
+            } w-full h-64 pt-5 mt-24 text-sm  md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative`}
           >
             <Link
               to="/home"
