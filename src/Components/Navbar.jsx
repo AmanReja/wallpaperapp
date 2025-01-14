@@ -1,8 +1,9 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ themeHandel }) {
   const [navopen, setNavopen] = useState(false);
+  const [theme, setTheme] = useState(false);
 
   const handelnavopen = () => {
     setNavopen((prev) => !prev);
@@ -12,6 +13,16 @@ function Navbar() {
     <>
       <header className="relative z-50 w-full h-24">
         <div className="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
+          <label className="inline-flex items-center me-5 cursor-pointer">
+            <input
+              onClick={themeHandel}
+              type="checkbox"
+              defaultValue
+              className="sr-only peer"
+              defaultChecked
+            />
+            <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600" />
+          </label>
           <a
             href="/"
             className="relative flex items-center  h-full font-black leading-none"
@@ -27,7 +38,7 @@ function Navbar() {
               </g>
             </svg>
             <span className="ml-3 text-xl text-gray-800">
-              Landmark<span className="text-pink-500">.</span>
+              Wallpaper hub<span className="text-pink-500">.</span>
             </span>
           </a>
           <nav
@@ -35,7 +46,7 @@ function Navbar() {
             className={`absolute  flex top-0 left-0 z-50 sm:h-0 pt-0  flex-col items-center justify-between ${
               !navopen
                 ? "hidden duration-300"
-                : "flex-col h-[35vh] gap-2 absolute top-[-20px] duration-300 transition-all"
+                : "flex-col h-[38vh] gap-2 absolute top-[-20px] duration-300 transition-all"
             } w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white  md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative`}
           >
             <Link
@@ -54,13 +65,13 @@ function Navbar() {
               href="#pricing"
               className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600"
             >
-              Pricing
+              Services
             </a>
             <a
-              href="#testimonials"
+              href="#footer"
               className="font-bold duration-100 transition-color hover:text-indigo-600"
             >
-              Testimonials
+              Contact us
             </a>
           </nav>
           <div

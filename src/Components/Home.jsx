@@ -1,6 +1,7 @@
 import React from "react";
 import vid1 from "../assets/Videos/vd1.mp4";
 import Wallpapers from "./Wallpapers";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -10,22 +11,22 @@ function Home() {
 
         {/* End Header Section*/}
         {/* BEGIN HERO SECTION */}
-        <div className="relative items-center justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64">
+        <div className="relative items-center overflow-hidden justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64">
           <div className="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
             <div className="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
               <h1 className="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8">
-                Set your next Wallpapers
+                Set your next Wallpaper
               </h1>
               <p className="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">
-                Are you ready to start your adventure and start building the
-                next greatest SAAS app on the market?
+                Are you ready to download dynamic walpapers for your mobile or
+                laptop
               </p>
-              <a
-                href="#_"
+              <Link
+                to="/signup"
                 className="relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white bg-indigo-600 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0"
               >
                 Signup Today!
-              </a>
+              </Link>
               {/* Integrates with section */}
               <div className="flex-col hidden mt-12 sm:flex lg:mt-24">
                 <p className="mb-4 text-sm font-medium tracking-widest text-gray-500 uppercase">
@@ -197,7 +198,7 @@ function Home() {
               Our Features
             </h2>
             <h3 className="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-              Built and Designed with you in Mind
+              Customize Your Screen with Stunning Wallpapers
             </h3>
             <div className="flex flex-col w-full mt-0 lg:flex-row sm:mt-10 lg:mt-20">
               <div className="w-full max-w-md p-4 mx-auto mb-0 sm:mb-16 lg:mb-0 lg:w-1/3">
@@ -311,9 +312,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold">
-                    Automated Tools
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">Animated</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Automate your workflow with these top of the line marketing
                     tools.
@@ -427,9 +426,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold">
-                    Machine Learning
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">HD</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Your Marketing tools will learn how to better convert and
                     sell.
@@ -546,9 +543,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold">
-                    Smart Notifications
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">live</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Our smart notifications will notify you when users convert.
                   </p>

@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
 import Home from "./Components/Home.jsx";
+import Footer from "./Components/Footer.jsx";
 
 import {
   Route,
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route index path="/" element={<Login />} />
       <Route index path="/signup" element={<Signup />} />
       <Route index path="/home" element={<Home />} />
+      {/* <Route index path="/footer" element={<Footer />} /> */}
     </Route>
   )
 );
