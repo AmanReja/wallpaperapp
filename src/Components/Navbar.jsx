@@ -45,10 +45,10 @@ function Navbar({ themeHandel }) {
               !navopen
                 ? "hidden duration-300"
                 : "flex-col h-[38vh] gap-2 absolute top-[-20px] duration-300 transition-all"
-            } w-full h-64 pt-5 mt-24 text-sm  md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative`}
+            } w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white  md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative`}
           >
             <Link
-              to="/home"
+              to="/"
               className="ml-0 mr-0 font-bold duration-100 md:ml-12 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600"
             >
               Home
@@ -76,7 +76,7 @@ function Navbar({ themeHandel }) {
             className={`absolute  left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between`}
           >
             <Link
-              to="/"
+              to="/login"
               className="relative z-40 px-3 py-2 mr-0 text-sm font-bold text-pink-500 md:px-5 lg:text-white sm:mr-3 md:mt-0"
             >
               Login

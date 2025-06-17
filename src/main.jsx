@@ -12,15 +12,15 @@ import {
   Router,
   RouterProvider,
   createBrowserRouter,
-  createRoutesFromElements
+  createRoutesFromElements,
 } from "react-router-dom";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<App />}>
-      <Route index path="/" element={<Login />} />
-      <Route index path="/signup" element={<Signup />} />
-      <Route index path="/home" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route index path="/" element={<Home />} />
       {/* <Route index path="/footer" element={<Footer />} /> */}
     </Route>
   )

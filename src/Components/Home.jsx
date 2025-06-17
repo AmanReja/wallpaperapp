@@ -191,13 +191,13 @@ function Home() {
         {/* BEGIN FEATURES SECTION */}
         <div
           id="features"
-          className="relative w-full px-8 py-10  md:py-16 lg:py-24 xl:py-40 xl:px-0"
+          className="relative w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0"
         >
           <div className="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
             <h2 className="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">
               Our Features
             </h2>
-            <h3 className="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center sm:mt-0 sm:px-0 sm:text-6xl">
+            <h3 className="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
               Customize Your Screen with Stunning Wallpapers
             </h3>
             <div className="flex flex-col w-full mt-0 lg:flex-row sm:mt-10 lg:mt-20">
@@ -312,9 +312,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold text-black">
-                    Animated
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">Animated</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Automate your workflow with these top of the line marketing
                     tools.
@@ -428,9 +426,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold  text-black">
-                    HD
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">HD</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Your Marketing tools will learn how to better convert and
                     sell.
@@ -547,9 +543,7 @@ function Home() {
                       </g>
                     </g>
                   </svg>
-                  <h4 className="relative mt-6 text-lg font-bold  text-black">
-                    live
-                  </h4>
+                  <h4 className="relative mt-6 text-lg font-bold">live</h4>
                   <p className="relative mt-2 text-base text-center text-gray-600">
                     Our smart notifications will notify you when users convert.
                   </p>
@@ -863,7 +857,7 @@ function Home() {
                 <p className="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">
                   Our customers love our product
                 </p>
-                <h2 className="text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                   Testimonials
                 </h2>
                 <p className="my-6 text-xl font-medium text-gray-500">
